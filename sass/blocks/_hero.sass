@@ -1,0 +1,63 @@
+.hero
+  padding: 30px 0 40px
+  &__title
+    display: inline-block
+    margin: 0 0 30px
+    font-weight: 900
+    font-size: 28px
+    line-height: 35px
+    color: $title-color
+.check
+  max-width: 850px
+  overflow: hidden
+  &-tabs
+    display: flex
+    margin: 0
+    padding: 0
+    &__item
+      flex: 1 1
+      padding: 10px 0
+      background-color: $secondary
+      list-style-type: none
+      text-align: center
+      font-size: 20px
+      line-height: 30px
+      color: rgba(0, 0, 0, 0.42)
+      cursor: pointer
+      &--active
+        background-color: $light
+        font-size: 20px
+        line-height: 30px
+        color: #4D4D4D
+.form
+  padding: 30px 40px 10px 25px
+  &-wrapper
+    display: flex
+    margin-bottom: 20px
+  &__input
+    padding: 20px 40px
+    height: 64px
+    border: 1.5px solid rgba(65, 65, 65, 0.3)
+    border-radius: 8px
+    font-size: 20px
+    line-height: 25px
+    &::placeholder
+      color: rgba(0, 0, 0, 0.5)
+  &__name
+    min-width: 460px
+    margin-right: 20px
+  &__date
+    width: 100%
+  &__region
+    min-width: 460px
+    margin-right: 20px
+  &__button
+    width: 100%
+    border: 1px solid $primary
+    border-radius: 10px
+    background-color: $light
+    color: $primary
+    font-weight: 600
+    font-size: 19px
+    line-height: 24px
+    text-align: center
