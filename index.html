@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оплата ФССП</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -70,7 +71,7 @@
               <img src="images/advantages-1.svg" alt="Иконка Преимущество 1" class="hero-advantages__img">
             </div>
             <div class="hero-advantages-info">
-              <h4 class="hero-advantages-info__title title">Официальный источник данных</h4>
+              <h3 class="hero-advantages-info__title title">Официальный источник данных</h4>
               <p class="hero-advantages-info__text">Сведения о задолженностях получаются из официального банка данных исполнительных производств ФССП России</p>
             </div>
           </div>
@@ -80,7 +81,7 @@
               <img src="images/advantages-2.svg" alt="Иконка Преимущество 2" class="hero-advantages__img">
             </div>
             <div class="hero-advantages-info">
-              <h4 class="hero-advantages-info__title title">Гарантия погашения</h4>
+              <h3 class="hero-advantages-info__title title">Гарантия погашения</h4>
               <p class="hero-advantages-info__text">Сведения об оплате передаются в ФССП России с использованием шлюзов Федерального казначейства</p>
             </div>
           </div>
@@ -90,7 +91,7 @@
               <img src="images/advantages-3.svg" alt="Иконка Преимущество 3" class="hero-advantages__img">
             </div>
             <div class="hero-advantages-info">
-              <h4 class="hero-advantages-info__title title">Безопасные платежи</h4>
+              <h3 class="hero-advantages-info__title title">Безопасные платежи</h4>
               <p class="hero-advantages-info__text">Безопасность платежей и данных банковских карт подтверждается сертификатом PCI DSS</p>
             </div>
           </div>
@@ -100,7 +101,7 @@
               <img src="images/advantages-4.svg" alt="Иконка Преимущество 4" class="hero-advantages__img">
             </div>
             <div class="hero-advantages-info">
-              <h4 class="hero-advantages-info__title title">Квитанция об оплате</h4>
+              <h3 class="hero-advantages-info__title title">Квитанция об оплате</h4>
               <p class="hero-advantages-info__text">Квитанция будет отправлена на указанный Вами адрес электронной почты сразу же после оплаты</p>
             </div>
           </div>
@@ -113,5 +114,44 @@
     <!-- /.container -->
   </section>
   <!-- /.hero -->
+
+  <section class="news">
+    <div class="container">
+      <div class="news__link-wrapper">
+        <a href="#" class="news__link">Все новости</a>
+      </div>
+    </div>
+    <!-- /.container -->
+      <div class="news-swiper swiper-container">
+        <div class="news-swiper-wrapper swiper-wrapper">
+          <div class="news-swiper-slide swiper-slide">
+            <img src="images/slide-1.jpg" alt="Изображение: Жилье россиян в пандемию стали реже принудительно продавать за долги" class="news__img block--shadow">
+            <h3 class="news__title title">Жилье россиян в пандемию стали реже принудительно продавать за долги</h3>
+            <p class="news__text">В 2020 году судебные приставы в интересах кредиторов выставили на торги на 14,1% меньше квартир, чем годом ранее.</p>
+          </div>
+          <!-- /.news swiper-slide -->
+          <div class="news-swiper-slide swiper-slide">
+            <img src="images/slide-no-image.jpg" alt="Изображение: Жилье россиян в пандемию стали реже принудительно продавать за долги" class="news__img">
+            <h3 class="news__title title">Число невыездных из-за долгов россиян выросло на 20% за год</h3>
+            <p class="news__text">Более 4 млн россиян не могут покинуть страну из-за долгов. За год таких граждан стало больше примерно на 700 тыс.</p>
+          </div>
+          <!-- /.news swiper-slide -->
+          <div class="news-swiper-slide swiper-slide">
+            <img src="images/slide-no-image.jpg" alt="Изображение: Жилье россиян в пандемию стали реже принудительно продавать за долги" class="news__img">
+            <h3 class="news__title title">Компания Филиппа Киркорова задолжала налоговой ₽95 тыс.</h3>
+            <p class="news__text">ООО «Филипп Киркоров Продакшн» задолжало Федеральной налоговой службе 95 тыс. 605 руб. </p>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <button class="news-swiper__button news-swiper__button--next"></button>
+        <button class="news-swiper__button news-swiper__button--prev"></button>
+      </div>
+      <!-- /.news-swiper -->
+  </section>
+  <!-- /.news -->
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/news-swiper.js"></script>
 </body>
 </html>

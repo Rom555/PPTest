@@ -1,0 +1,49 @@
+.news
+  padding: 20px 0 40px
+  background-color: $secondary
+  &__link
+    color: $primary
+    font-weight: 600
+    font-size: 16px
+    line-height: 20px
+    &-wrapper
+      margin-bottom: 20px
+      text-align: right
+  &__img
+    position: relative
+    margin-bottom: 15px
+    width: 360px
+    height: 150px
+    object-fit: cover
+    overflow: hidden
+    border-radius: 10px
+  &__title
+    margin-bottom: 12px
+    font-size: 18px
+    line-height: 23px
+  &__text
+    font-size: 16px
+    line-height: 20px
+  &-swiper
+    position: relative
+    max-width: 1230px
+    padding: 0 30px
+    &__button
+      position: absolute
+      top: 58px
+      padding: 0
+      width: 35px
+      height: 35px
+      z-index: 2
+      border: 0.5px solid #DBDBDB
+      border-radius: 50%
+      background-color: $light
+      background-repeat: no-repeat
+      background-position: center
+      background-image: url('../images/swiper-arrow.svg')
+      &--prev
+        left: 0
+        transform: translateX(50%)
+      &--next
+        right: 0
+        transform: rotate(180deg) translateX(50%)
