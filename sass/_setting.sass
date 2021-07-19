@@ -5,10 +5,19 @@ body
   font-family: 'Source Sans Pro', sans-serif
   color: $text-color
   font-weight: 400
+  overflow-x: hidden
 a
   text-decoration: none
 button
   cursor: pointer
+  &:active,
+  &:focus
+    outline: none
+input
+  outline: none
+  &:active,
+  &:focus
+    outline: none
 p
   margin: 0
 .top-line

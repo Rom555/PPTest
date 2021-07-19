@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оплата ФССП</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -40,23 +41,41 @@
   <section class="hero">
     <div class="container">
       <div class="hero-wrapper">
-        <h1 class="hero__title title">Проверить задолженность у судебных приставов</h1>
+        <h1 class="hero__title title">Проверить задолженность у судебных&nbsp;приставов</h1>
         <div class="check block--shadow hero-check">
           <ul class="check-tabs">
-            <li class="check-tabs__item check-tabs__item--active">Физическое лицо</li>
-            <li class="check-tabs__item">Юридическое лицо</li>
-            <li class="check-tabs__item">Номер ИП</li>
-            <li class="check-tabs__item">Номер ИД</li>
+            <li class="check-tabs__item check-tabs__item--active">
+              <img src="images/tab-1.svg" alt="" class="check-tabs__img check-tabs__img--active">
+              Физическое лицо
+            </li>
+            <li class="check-tabs__item">
+              <img src="images/tab-2.svg" alt="" class="check-tabs__img">
+              Юридическое лицо
+            </li>
+            <li class="check-tabs__item">
+              <img src="images/tab-3.svg" alt="" class="check-tabs__img">
+              Номер ИП
+            </li>
+            <li class="check-tabs__item">
+              <img src="images/tab-4.svg" alt="" class="check-tabs__img">
+              Номер ИД
+            </li>
           </ul>
           <!-- /.tabs -->
           <form action="#" class="check-form form">
             <div class="form-wrapper">
               <input type="text" class="form__input form__name" placeholder="Иванов Иван Иванович">
-              <input type="text" class="form__input form form__date" placeholder="09.03.1986">
+              <div class="form__date-wrapper">
+                <input type="text" class="form__input form__date" placeholder="09.03.1986">
+                <img src="images/calendar.svg" alt="" class="form__date-icon">
+              </div>
             </div>
             <!-- /.form-wrapper -->
             <div class="form-wrapper">
-              <input type="text" class="form__input form__region">
+              <div class="form__region-wrapper">
+                <input type="text" class="form__input form__region" value="Все регионы">
+                <img src="images/form-arrow.svg" alt="" class="form__region-icon">
+              </div>
               <button class="form__button">Проверить задолженности</button>
             </div>
             <!-- /.form-wrapper -->
@@ -64,46 +83,58 @@
           <!-- /.check-form -->
         </div>
         <!-- /.check -->
-        <img src="images/banner.png" alt="Изображение: ФССП России - проверка и оплата. Приложение" class="hero__img">
+        <picture class="hero__img">
+          <source media="(max-width: 400px)" srcset="images/banner-mini.png" >
+          <img src="images/banner.png" alt="Изображение: ФССП России - проверка и оплата. Приложение" >
+        </picture>
+        
         <div class="hero-advantages">
           <div class="hero-advantages__card block--shadow">
             <div class="hero-advantages__img-wrapper">
               <img src="images/advantages-1.svg" alt="Иконка Преимущество 1" class="hero-advantages__img">
             </div>
+            <h3 class="hero-advantages-info__title hero-advantages-info__title--mobile title">Официальный источник данных</h3>
             <div class="hero-advantages-info">
-              <h3 class="hero-advantages-info__title title">Официальный источник данных</h4>
+              <h3 class="hero-advantages-info__title title">Официальный источник данных</h3>
               <p class="hero-advantages-info__text">Сведения о задолженностях получаются из официального банка данных исполнительных производств ФССП России</p>
             </div>
+            <img src="images/question.svg" alt="" class="hero-advantages__icon">
           </div>
           <!-- /.hero-advantages__card -->
           <div class="hero-advantages__card block--shadow">
             <div class="hero-advantages__img-wrapper">
               <img src="images/advantages-2.svg" alt="Иконка Преимущество 2" class="hero-advantages__img">
             </div>
+            <h3 class="hero-advantages-info__title hero-advantages-info__title--mobile title">Гарантия погашения</h3>
             <div class="hero-advantages-info">
-              <h3 class="hero-advantages-info__title title">Гарантия погашения</h4>
+              <h3 class="hero-advantages-info__title title">Гарантия погашения</h3>
               <p class="hero-advantages-info__text">Сведения об оплате передаются в ФССП России с использованием шлюзов Федерального казначейства</p>
             </div>
+            <img src="images/question.svg" alt="" class="hero-advantages__icon">
           </div>
           <!-- /.hero-advantages__card -->
           <div class="hero-advantages__card block--shadow">
             <div class="hero-advantages__img-wrapper">
               <img src="images/advantages-3.svg" alt="Иконка Преимущество 3" class="hero-advantages__img">
             </div>
+            <h3 class="hero-advantages-info__title hero-advantages-info__title--mobile title">Безопасные платежи</h3>
             <div class="hero-advantages-info">
-              <h3 class="hero-advantages-info__title title">Безопасные платежи</h4>
+              <h3 class="hero-advantages-info__title title">Безопасные платежи</h3>
               <p class="hero-advantages-info__text">Безопасность платежей и данных банковских карт подтверждается сертификатом PCI DSS</p>
             </div>
+            <img src="images/question.svg" alt="" class="hero-advantages__icon">
           </div>
           <!-- /.hero-advantages__card -->
           <div class="hero-advantages__card block--shadow">
             <div class="hero-advantages__img-wrapper">
               <img src="images/advantages-4.svg" alt="Иконка Преимущество 4" class="hero-advantages__img">
             </div>
+            <h3 class="hero-advantages-info__title hero-advantages-info__title--mobile title">Квитанция об оплате</h3>
             <div class="hero-advantages-info">
-              <h3 class="hero-advantages-info__title title">Квитанция об оплате</h4>
+              <h3 class="hero-advantages-info__title title">Квитанция об оплате</h3>
               <p class="hero-advantages-info__text">Квитанция будет отправлена на указанный Вами адрес электронной почты сразу же после оплаты</p>
             </div>
+            <img src="images/question.svg" alt="" class="hero-advantages__icon">
           </div>
           <!-- /.hero-advantages__card -->
         </div>
@@ -143,9 +174,10 @@
           </div>
         </div>
 
-        <!-- If we need navigation buttons -->
         <button class="news-swiper__button news-swiper__button--next"></button>
         <button class="news-swiper__button news-swiper__button--prev"></button>
+        
+        <div class="news-swiper__pagination"></div>
       </div>
       <!-- /.news-swiper -->
   </section>
@@ -172,6 +204,7 @@
           <p class="articles__text">Описание процедуры списания денег приставами, ответы на часто задаваемые по этому поводу вопросы. Ответы на часто задаваемые по этому поводу вопросы. Ответы на часто задаваемые по этому поводу вопросы. </p>
         </div>
         <a href="#" class="content__link">Все статьи</a>
+        <hr class="articles__line">
       </section>
       <!-- /.articles -->
       <section class="departments content-wrapper block--shadow">
@@ -246,5 +279,11 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/news-swiper.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/datalist.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/mobile.js"></script>
+  <script src="js/advantages.js"></script>
 </body>
 </html>
